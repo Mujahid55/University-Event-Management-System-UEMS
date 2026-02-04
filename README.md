@@ -523,9 +523,6 @@ This project is developed as a senior capstone project. All rights reserved.
 ## Contact
 
 For questions, feedback, or collaboration opportunities:
-- Project Repository: [GitHub Repository URL]
-- Email: [Your Email]
-- LinkedIn: [Your LinkedIn Profile]
 
 ---
 
