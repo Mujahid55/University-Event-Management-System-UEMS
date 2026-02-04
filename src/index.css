@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* University Portal Design System */
+    
+    /* Core colors - Professional university palette */
+    --background: 0 0% 100%;
+    --foreground: 218 25% 15%;
+    
+    /* Primary - Deep university blue (trust, academia) */
+    --primary: 218 89% 35%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 218 89% 50%;
+    
+    /* Secondary - Light blue sky */
+    --secondary: 200 90% 92%;
+    --secondary-foreground: 218 89% 35%;
+    
+    /* Accent - Amber for actions/approvals */
+    --accent: 36 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Status colors */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 45 93% 47%;
+    --warning-foreground: 0 0% 100%;
+    
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Neutral tones */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 218 25% 15%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 218 25% 15%;
+    
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 218 89% 35%;
+    
+    --radius: 0.5rem;
+    
+    /* Status chip colors */
+    --status-draft: 210 40% 96%;
+    --status-draft-foreground: 215 16% 47%;
+    
+    --status-submitted: 200 100% 45%;
+    --status-submitted-foreground: 0 0% 100%;
+    
+    --status-approved: 142 71% 45%;
+    --status-approved-foreground: 0 0% 100%;
+    
+    --status-pending: 36 100% 50%;
+    --status-pending-foreground: 0 0% 100%;
+    
+    --status-rejected: 0 72% 51%;
+    --status-rejected-foreground: 0 0% 100%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(218 89% 35%), hsl(218 89% 50%));
+    --gradient-accent: linear-gradient(135deg, hsl(36 100% 50%), hsl(36 100% 60%));
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    --shadow-primary: 0 10px 30px -10px hsl(218 89% 35% / 0.3);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 218 25% 15%;
+    --sidebar-primary: 218 89% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 200 90% 92%;
+    --sidebar-accent-foreground: 218 89% 35%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 218 89% 35%;
+  }
+
+  .dark {
+    --background: 218 25% 8%;
+    --foreground: 210 40% 98%;
+    
+    --primary: 218 89% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 218 89% 60%;
+    
+    --secondary: 218 25% 15%;
+    --secondary-foreground: 210 40% 98%;
+    
+    --accent: 36 100% 55%;
+    --accent-foreground: 0 0% 100%;
+    
+    --success: 142 71% 50%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 45 93% 52%;
+    --warning-foreground: 0 0% 100%;
+    
+    --destructive: 0 72% 56%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --muted: 218 25% 15%;
+    --muted-foreground: 215 20% 65%;
+    
+    --card: 218 25% 10%;
+    --card-foreground: 210 40% 98%;
+    
+    --popover: 218 25% 10%;
+    --popover-foreground: 210 40% 98%;
+    
+    --border: 218 25% 18%;
+    --input: 218 25% 18%;
+    --ring: 218 89% 50%;
+    
+    --status-draft: 218 25% 15%;
+    --status-draft-foreground: 215 20% 65%;
+    
+    --status-submitted: 200 100% 50%;
+    --status-submitted-foreground: 0 0% 100%;
+    
+    --status-approved: 142 71% 50%;
+    --status-approved-foreground: 0 0% 100%;
+    
+    --status-pending: 36 100% 55%;
+    --status-pending-foreground: 0 0% 100%;
+    
+    --status-rejected: 0 72% 56%;
+    --status-rejected-foreground: 0 0% 100%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(218 89% 50%), hsl(218 89% 60%));
+    --gradient-accent: linear-gradient(135deg, hsl(36 100% 55%), hsl(36 100% 65%));
+    
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.2);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.3);
+    --shadow-primary: 0 10px 30px -10px hsl(218 89% 50% / 0.4);
+    
+    --sidebar-background: 218 25% 10%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 218 89% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 218 25% 15%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 218 25% 18%;
+    --sidebar-ring: 218 89% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
